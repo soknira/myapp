@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Inner Page - Guitar Center</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-inner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<style>
+  body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.shop-container {
+    padding: 20px;
+}
+
+.products, .sale-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card, .sale-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-card img, .sale-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h2, .sale-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p, .sale-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.add-to-cart, .view {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover, .view:hover {
+    background-color: #0056b3;
+}
+
+.card-body {
+    border: 1px solid #cecece;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.trash-icon {
+    cursor: pointer;
+}
+
+.alert-container {
+    padding: 20px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+}
+
+.mobile-nav-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #navbar ul {
+        display: none;
+    }
+
+    #navbar.active ul {
+        display: block;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    #navbar.active {
+        display: block;
+    }
+}
+
+</style>
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div id="logo">
+            <img src="assets/img/logo-5.png" alt="" id="logo-1">
+            <h1><a href="index.html">GUITAR CENTER</a></h1>
+        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+                <li><a class="nav-link scrollto" href="index.html#features">Learn</a></li>
+                <li><a class="nav-link scrollto" href="index.html#pricing">Pricing</a></li>
+                <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+                <li><a class="nav-link scrollto" href="index.html#gallery">Gallery</a></li>
+                <li><a class="nav-link scrollto active" href="inner-page.html">Shop</a></li>
+                <li><a class="nav-link scrollto" href="Login.html">Login</a></li>
+            </ul>
+            <div class="cart-icon" id="mobile-menu">
+                <i class="fa fa-shopping-cart"></i>
+                <div class="cart-count" id="cart-count">0</div>
+            </div>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Shop</h2>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Shop</li>
+                </ol>
+            </div>
+        </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+        <div class="container">
+            <!-- Shop Section -->
+            <main class="shop-container">
+                <h1>Shop</h1>
+                <div class="products">
+                    <div class="product-card">
+                        <img src="assets/img/shop/image.png" alt="Product 1">
+                        <h2>Guitar</h2>
+                        <p>$159.99</p>
+                        <button class="add-to-cart" data-product="Guitar" data-price="159.99">Add to Cart</button>
+                        <button class="view" data-product="Guitar" data-price="159.99">View</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/img/shop/image.png" alt="Product 2">
+                        <h2>Product 2</h2>
+                        <p>$29.99</p>
+                        <button class="add-to-cart" data-product="Product 2" data-price="29.99">Add to Cart</button>
+                        <button class="view" data-product="Product 2" data-price="29.99">View</button>
+                    </div>
+                    <!-- Additional Product Cards Here -->
+                </div>
+            </main>
+
+            <!-- Sale Section -->
+            <section class="shop-container">
+                <div class="sale-products">
+                    <div class="sale-card">
+                        <img src="assets/img/shop/image.png" alt="Sale Product 1">
+                        <h2>Sale Product 1</h2>
+                        <p>$9.99 <span style="text-decoration: line-through;">$19.99</span></p>
+                        <button class="add-to-cart" data-product="Sale Product 1" data-price="9.99">Add to Cart</button>
+                        <button class="view" data-product="Sale Product 1" data-price="9.99">View</button>
+                    </div>
+                    <!-- Additional Sale Cards Here -->
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="copyright">
+                    &copy; Copyright <strong>Guitar Center</strong>. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-chevron-up"></i></a>
+</body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const viewButtons = document.querySelectorAll('.view');
+    const trashIcons = document.querySelectorAll('.trash-icon');
+    let cartCount = 0;
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            cartCount++;
+            document.getElementById('cart-count').textContent = cartCount;
+        });
+    });
+
+    viewButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            createAlertPage(button.dataset.product, button.dataset.price);
+        });
+    });
+
+    trashIcons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            const cardBody = this.closest('.card-body');
+            cardBody.remove();
+            updateCardCount();
+        });
+    });
+
+    function createAlertPage(product, price) {
+        const alertPage = document.createElement('div');
+        alertPage.classList.add('alert-container');
+        alertPage.style.position = 'fixed';
+        alertPage.style.top = '0';
+        alertPage.style.left = '0';
+        alertPage.style.width = '100%';
+        alertPage.style.height = '100%';
+        alertPage.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        alertPage.style.zIndex = '9999';
+        alertPage.style.display = 'flex';
+        alertPage.style.alignItems = 'center';
+        alertPage.style.justifyContent = 'center';
+
+        const alertBox = document.createElement('div');
+        alertBox.style.backgroundColor = '#fff';
+        alertBox.style.padding = '20px';
+        alertBox.style.borderRadius = '10px';
+        alertBox.style.textAlign = 'center';
+        alertBox.innerHTML = `
+            <h2>${product}</h2>
+            <p>Price: $${price}</p>
+            <button id="close-alert" class="btn btn-danger">Close</button>
+        `;
+
+        alertPage.appendChild(alertBox);
+        document.body.appendChild(alertPage);
+
+        document.getElementById('close-alert').addEventListener('click', () => {
+            document.body.removeChild(alertPage);
+        });
+    }
+
+    function updateCardCount() {
+        const cardCount = document.querySelectorAll('.card-body').length;
+        document.getElementById('count').textContent = cardCount;
+    }
+});
+
+  </script>
+</html>
